@@ -1,5 +1,4 @@
-div#scroll{
-    overflow-y: scroll;
-    height: 500px;
-    border: 1px solid black;
+div#scroll {
+  overflow-y: scroll;
+  height: 500px;
 }

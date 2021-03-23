@@ -1,0 +1,13 @@
+div.main {
+  width: 50%;
+  background: white;
+}
+div.container {
+  display: flex;
+  justify-content: center;
+}
+input.addUser {
+  background: #222222;
+  max-width: 80%;
+  color: white;
+}

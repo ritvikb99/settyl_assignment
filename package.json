@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/ritvikb99/realtime-search",
+  "homepage": "http://ritvikb99.github.io/settyl_assignment",
   "name": "robofriends",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +9,11 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.2",
     "react-scripts": "^4.0.3",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
     "tachyons": "^4.12.0"
   },
   "scripts": {

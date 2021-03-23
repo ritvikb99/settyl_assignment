@@ -1,0 +1,11 @@
+div.card {
+  background: #eceff1;
+}
+img {
+  width: 70%;
+  height: auto;
+}
+
+div.hidden {
+  display: none;
+}

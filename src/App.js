@@ -1,54 +1,68 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import CardsList from './CardsList';
 import SearchBox from './SearchBox';
-//import {robots} from './robots';
+import { connect } from 'react-redux';
 import './App.css';
 import Scroll from './Scroll';
+import AddUserComponent from './AddUserComponent';
+import { setSearchField, requestUsers } from './actions';
 
-const App = () => {
-  /* constructor(props){
-        super(props);         //Always pass props to base constructor
-        this.state = {
-            robots: [],
-            searchField : "",
-        };
-    } */
-
-  /* componentDidMount(){
-        fetch('https://jsonplaceholder.typicode.com/users').then(response=>response.json())
-        .then(users=>this.setState({robots: users}));
-    } */
-
-  const [robots, setRobots] = useState([]);
-  const [searchField, setSearchField] = useState('');
-
-  const onSearchChange = (event) => {
-    setSearchField(event.target.value);
+const mapStateToProps = (state) => {
+  return {
+    searchField: state.searchUsers.searchField,
+    users: state.requestUsers.users,
+    error: state.requestUsers.error,
+    isPending: state.requestUsers.isPending,
   };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onSearchChange: (event) => {
+      dispatch(setSearchField(event.target.value));
+    },
+    onRequestUsers: () => {
+      dispatch(requestUsers()); //requestUsers(dispatch)    ALT
+    },
+  };
+};
+
+const App = (props) => {
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then((response) => response.json())
-      .then((users) => setRobots(users));
+    props.onRequestUsers();
+    // eslint-disable-next-line
   }, []);
-  let filteredRobots = robots.filter((robot) => {
-    return robot.name.toLowerCase().includes(searchField.toLowerCase());
+  let filteredUsers = props.users.filter((user) => {
+    return user.name.toLowerCase().includes(props.searchField.toLowerCase());
   });
 
+  const [isAddUserClicked, setIsAddUserClicked] = useState(false);
+  const onAddUserClick = () => {
+    if (isAddUserClicked) {
+      setIsAddUserClicked(false);
+    } else {
+      setIsAddUserClicked(true);
+    }
+  };
   return (
     <Fragment>
       <div className='tc'>
-        <h1 className='f1'>ReactSearch</h1>
-        <h1 className='f1'>With JSON placeholder</h1>
+        <h1 className='f1'>SETTYL</h1>
         <div>
-          <SearchBox searchChange={onSearchChange} />
+          <SearchBox searchChange={props.onSearchChange} />
         </div>
         <br></br>
+        <hr />
+        {isAddUserClicked ? <AddUserComponent /> : <br />}
+        <button className='f6 grow no-underline br-pill ph3 pv2 mb2 dib near-black bg-white' onClick={onAddUserClick}>
+          Add User
+        </button>
         <Scroll>
-          <CardsList robots={filteredRobots} />
+          <CardsList users={filteredUsers} />
         </Scroll>
       </div>
     </Fragment>
   );
 };
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
