@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/settyl_assignment/static/css/main.128a786b.chunk.css",
+    "main.js": "/settyl_assignment/static/js/main.c39b93b0.chunk.js",
+    "main.js.map": "/settyl_assignment/static/js/main.c39b93b0.chunk.js.map",
+    "runtime-main.js": "/settyl_assignment/static/js/runtime-main.b096220b.js",
+    "runtime-main.js.map": "/settyl_assignment/static/js/runtime-main.b096220b.js.map",
+    "static/css/2.fe359a49.chunk.css": "/settyl_assignment/static/css/2.fe359a49.chunk.css",
+    "static/js/2.f5482d7c.chunk.js": "/settyl_assignment/static/js/2.f5482d7c.chunk.js",
+    "static/js/2.f5482d7c.chunk.js.map": "/settyl_assignment/static/js/2.f5482d7c.chunk.js.map",
+    "index.html": "/settyl_assignment/index.html",
+    "static/css/2.fe359a49.chunk.css.map": "/settyl_assignment/static/css/2.fe359a49.chunk.css.map",
+    "static/css/main.128a786b.chunk.css.map": "/settyl_assignment/static/css/main.128a786b.chunk.css.map",
+    "static/js/2.f5482d7c.chunk.js.LICENSE.txt": "/settyl_assignment/static/js/2.f5482d7c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b096220b.js",
+    "static/css/2.fe359a49.chunk.css",
+    "static/js/2.f5482d7c.chunk.js",
+    "static/css/main.128a786b.chunk.css",
+    "static/js/main.c39b93b0.chunk.js"
+  ]
+}
