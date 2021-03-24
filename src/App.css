@@ -4,3 +4,7 @@ h1 {
   font-weight: 500;
   color: #ffffff;
 }
+
+div.buttons button {
+  margin-inline: 2em;
+}

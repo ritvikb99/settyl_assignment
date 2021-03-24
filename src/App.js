@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import './App.css';
 import Scroll from './Scroll';
 import AddUserComponent from './AddUserComponent';
+import ShowChartComponent from './ShowChartComponent';
 import { setSearchField, requestUsers } from './actions';
 
 const mapStateToProps = (state) => {
@@ -37,13 +38,26 @@ const App = (props) => {
   });
 
   const [isAddUserClicked, setIsAddUserClicked] = useState(false);
+  const [isShowChartClicked, setIsShowChartClicked] = useState(false);
+
   const onAddUserClick = () => {
     if (isAddUserClicked) {
       setIsAddUserClicked(false);
     } else {
+      setIsShowChartClicked(false);
       setIsAddUserClicked(true);
     }
   };
+
+  const onShowChartClick = () => {
+    if (isShowChartClicked) {
+      setIsShowChartClicked(false);
+    } else {
+      setIsAddUserClicked(false);
+      setIsShowChartClicked(true);
+    }
+  };
+
   return (
     <Fragment>
       <div className='tc'>
@@ -54,9 +68,15 @@ const App = (props) => {
         <br></br>
         <hr />
         {isAddUserClicked ? <AddUserComponent /> : <br />}
-        <button className='f6 grow no-underline br-pill ph3 pv2 mb2 dib near-black bg-white' onClick={onAddUserClick}>
-          Add User
-        </button>
+        {isShowChartClicked ? <ShowChartComponent /> : <br />}
+        <div className='buttons'>
+          <button className='f6 grow no-underline br-pill ph3 pv2 mb2 dib near-black bg-white' onClick={onAddUserClick}>
+            Add User
+          </button>
+          <button className='f6 grow no-underline br-pill ph3 pv2 mb2 dib near-black bg-white' onClick={onShowChartClick}>
+            Show Chart
+          </button>
+        </div>
         <Scroll>
           <CardsList users={filteredUsers} />
         </Scroll>

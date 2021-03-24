@@ -1,0 +1,12 @@
+div.container {
+  display: flex;
+  justify-content: center;
+}
+div.inner {
+  background-color: #222831;
+  width: 70%;
+}
+
+div.inner label {
+  color: whitesmoke;
+}
