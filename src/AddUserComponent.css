@@ -7,7 +7,18 @@ div.container {
   justify-content: center;
 }
 input.addUser {
-  background: #222222;
+  background: #263238;
   max-width: 80%;
   color: white;
+}
+.inputWrapper label {
+  float: left;
+  margin-left: 2em;
+}
+div.main {
+  width: fit-content;
+}
+
+button {
+  background-color: #263238;
 }

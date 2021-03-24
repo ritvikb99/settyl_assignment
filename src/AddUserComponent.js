@@ -56,29 +56,41 @@ const AddUserComponent = (props) => {
   return (
     <div className='container'>
       <div className='main br4'>
-        <label htmlFor='name'>Name</label>
+        <div className='inputWrapper'>
+          <label htmlFor='name'>Name</label>
+          <br></br>
+          <input className='addUser ' onChange={onNameChange} type='text' name='name'></input>
+          <br />
+        </div>
+        <div className='inputWrapper'>
+          <label htmlFor='email'>Email</label>
+          <br></br>
+          <input className='addUser ' onChange={onEmailChange} type='email' name='email'></input>
+          <br />
+        </div>
+        <div className='inputWrapper'>
+          <label htmlFor='username'>Username</label>
+          <br></br>
+          <input className='addUser ' onChange={onUsernameChange} type='text' name='username'></input>
+          <br />
+        </div>
+        <div className='inputWrapper'>
+          <label htmlFor='phone'>Phone</label>
+          <br></br>
+          <input className='addUser ' onChange={onPhoneChange} type='text' name='phone'></input>
+          <br />
+        </div>
+        <div className='inputWrapper'>
+          <label htmlFor='website'>Website</label>
+          <br></br>
+          <input className='addUser ' onChange={onWebsiteChange} type='text' name='webste'></input>
+          <br />
+        </div>
         <br></br>
-        <input className='addUser br-pill' onChange={onNameChange} type='text' name='name'></input>
-        <br />
-        <label htmlFor='email'>Email</label>
         <br></br>
-        <input className='addUser br-pill' onChange={onEmailChange} type='email' name='email'></input>
-        <br />
-        <label htmlFor='username'>Username</label>
-        <br></br>
-        <input className='addUser br-pill' onChange={onUsernameChange} type='text' name='username'></input>
-        <br />
-        <label htmlFor='phone'>Phone</label>
-        <br></br>
-        <input className='addUser br-pill' onChange={onPhoneChange} type='text' name='phone'></input>
-        <br />
-        <label htmlFor='website'>Website</label>
-        <br></br>
-        <input className='addUser br-pill' onChange={onWebsiteChange} type='text' name='webste'></input>
-        <br />
-        <br></br>
-        <br></br>
-        <button onClick={onSubmitButton}> Click to Add</button>
+        <button className='white b pv2 ph3 hover-bg-near-black bn br2 hover-shadow-inner' onClick={onSubmitButton}>
+          Click to Add
+        </button>
         <br />
         <br />
       </div>
