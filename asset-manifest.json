@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/settyl_assignment/static/css/main.a5112028.chunk.css",
-    "main.js": "/settyl_assignment/static/js/main.dd5f2038.chunk.js",
-    "main.js.map": "/settyl_assignment/static/js/main.dd5f2038.chunk.js.map",
+    "main.css": "/settyl_assignment/static/css/main.69522f48.chunk.css",
+    "main.js": "/settyl_assignment/static/js/main.7153c64a.chunk.js",
+    "main.js.map": "/settyl_assignment/static/js/main.7153c64a.chunk.js.map",
     "runtime-main.js": "/settyl_assignment/static/js/runtime-main.b096220b.js",
     "runtime-main.js.map": "/settyl_assignment/static/js/runtime-main.b096220b.js.map",
     "static/css/2.fe359a49.chunk.css": "/settyl_assignment/static/css/2.fe359a49.chunk.css",
-    "static/js/2.f5482d7c.chunk.js": "/settyl_assignment/static/js/2.f5482d7c.chunk.js",
-    "static/js/2.f5482d7c.chunk.js.map": "/settyl_assignment/static/js/2.f5482d7c.chunk.js.map",
+    "static/js/2.2460e563.chunk.js": "/settyl_assignment/static/js/2.2460e563.chunk.js",
+    "static/js/2.2460e563.chunk.js.map": "/settyl_assignment/static/js/2.2460e563.chunk.js.map",
     "index.html": "/settyl_assignment/index.html",
     "static/css/2.fe359a49.chunk.css.map": "/settyl_assignment/static/css/2.fe359a49.chunk.css.map",
-    "static/css/main.a5112028.chunk.css.map": "/settyl_assignment/static/css/main.a5112028.chunk.css.map",
-    "static/js/2.f5482d7c.chunk.js.LICENSE.txt": "/settyl_assignment/static/js/2.f5482d7c.chunk.js.LICENSE.txt"
+    "static/css/main.69522f48.chunk.css.map": "/settyl_assignment/static/css/main.69522f48.chunk.css.map",
+    "static/js/2.2460e563.chunk.js.LICENSE.txt": "/settyl_assignment/static/js/2.2460e563.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b096220b.js",
     "static/css/2.fe359a49.chunk.css",
-    "static/js/2.f5482d7c.chunk.js",
-    "static/css/main.a5112028.chunk.css",
-    "static/js/main.dd5f2038.chunk.js"
+    "static/js/2.2460e563.chunk.js",
+    "static/css/main.69522f48.chunk.css",
+    "static/js/main.7153c64a.chunk.js"
   ]
 }
