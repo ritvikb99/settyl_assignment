@@ -36,6 +36,10 @@ const AddUserComponent = (props) => {
     let newUsers = [...props.users];
     newUsers.push(user);
     props.addUser(newUsers);
+    let list = document.getElementsByClassName('resetable');
+    for (let element of list) {
+      element.value = '';
+    }
   };
 
   const onNameChange = (event) => {
@@ -59,36 +63,61 @@ const AddUserComponent = (props) => {
         <div className='inputWrapper'>
           <label htmlFor='name'>Name</label>
           <br></br>
-          <input className='addUser ' onChange={onNameChange} type='text' name='name'></input>
+          <input
+            className='addUser br3 pa2 input-reset ba bg-transparent hover-white w-100 resetable'
+            onChange={onNameChange}
+            type='text'
+            name='name'
+          ></input>
           <br />
         </div>
         <div className='inputWrapper'>
           <label htmlFor='email'>Email</label>
           <br></br>
-          <input className='addUser ' onChange={onEmailChange} type='email' name='email'></input>
+          <input
+            className='addUser br3 pa2 input-reset ba bg-transparent hover-white w-100 resetable'
+            onChange={onEmailChange}
+            type='email'
+            name='email'
+          ></input>
           <br />
         </div>
         <div className='inputWrapper'>
           <label htmlFor='username'>Username</label>
           <br></br>
-          <input className='addUser ' onChange={onUsernameChange} type='text' name='username'></input>
+          <input
+            className='addUser br3 pa2 input-reset ba bg-transparent hover-white w-100 resetable'
+            onChange={onUsernameChange}
+            type='text'
+            name='username'
+          ></input>
           <br />
         </div>
-        <div className='inputWrapper'>
+        <div className='inputWrapper br3'>
           <label htmlFor='phone'>Phone</label>
           <br></br>
-          <input className='addUser ' onChange={onPhoneChange} type='text' name='phone'></input>
+          <input
+            className='addUser br3 pa2 input-reset ba bg-transparent hover-white w-100 resetable'
+            onChange={onPhoneChange}
+            type='text'
+            name='phone'
+          ></input>
           <br />
         </div>
         <div className='inputWrapper'>
           <label htmlFor='website'>Website</label>
           <br></br>
-          <input className='addUser ' onChange={onWebsiteChange} type='text' name='webste'></input>
+          <input
+            className='addUser br3 pa2 input-reset ba bg-transparent hover-white w-100 resetable'
+            onChange={onWebsiteChange}
+            type='text'
+            name='webste'
+          ></input>
           <br />
         </div>
         <br></br>
         <br></br>
-        <button className='white b pv2 ph3 hover-bg-near-black bn br2 hover-shadow-inner' onClick={onSubmitButton}>
+        <button className='white b pv2 ph3 hover-bg-near-black bn br3 hover-shadow-inner' onClick={onSubmitButton}>
           Click to Add
         </button>
         <br />

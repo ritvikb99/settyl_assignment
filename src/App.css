@@ -3,8 +3,22 @@ h1 {
   font-family: 'Dela Gothic One', cursive;
   font-weight: 500;
   color: #ffffff;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
 }
 
 div.buttons button {
   margin-inline: 2em;
+  background-color: #4b5d67;
+  color: white;
+}
+
+nav.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #4b5d67;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
 }

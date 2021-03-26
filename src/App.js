@@ -61,12 +61,15 @@ const App = (props) => {
   return (
     <Fragment>
       <div className='tc'>
-        <h1 className='f1'>SETTYL</h1>
-        <div>
-          <SearchBox searchChange={props.onSearchChange} />
-        </div>
-        <br></br>
-        <hr />
+        <nav className='sticky'>
+          <h1 className='f1'>SETTYL</h1>
+
+          <div>
+            <SearchBox searchChange={props.onSearchChange} />
+          </div>
+          <br></br>
+          <hr />
+        </nav>
         {isAddUserClicked ? <AddUserComponent /> : <br />}
         {isShowChartClicked ? <ShowChartComponent /> : <br />}
         <div className='buttons'>
