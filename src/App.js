@@ -1,12 +1,12 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import CardsList from './CardsList';
-import SearchBox from './SearchBox';
 import { connect } from 'react-redux';
-import './App.css';
-import Scroll from './Scroll';
-import AddUserComponent from './AddUserComponent';
-import ShowChartComponent from './ShowChartComponent';
 import { setSearchField, requestUsers } from './actions';
+import './App.css';
+import CardsList from './Components/CardsList/CardsList';
+import SearchBox from './Components/SearchBox/SearchBox';
+import Scroll from './Components/Scroll/Scroll';
+import AddUserComponent from './Components/AddUserComponent/AddUserComponent';
+import ShowChartComponent from './Components/ShowChartComponent/ShowChartComponent';
 
 const mapStateToProps = (state) => {
   return {

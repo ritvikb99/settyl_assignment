@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { addUser } from './actions';
+import { addUser } from '../../actions';
 import { connect } from 'react-redux';
 import './AddUserComponent.css';
+
 const mapStateToProps = (state) => {
   return {
     users: state.requestUsers.users,

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 import './ShowChartComponent.css';
-import { skills, hobbies } from './data';
+import { skills, hobbies } from '../../data';
 
 const ShowChartComponent = ({ users }) => {
   const [chartData, setChartData] = useState(skills);
