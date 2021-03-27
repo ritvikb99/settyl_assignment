@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/settyl_assignment/static/css/main.1fdf14f8.chunk.css",
-    "main.js": "/settyl_assignment/static/js/main.944b254f.chunk.js",
-    "main.js.map": "/settyl_assignment/static/js/main.944b254f.chunk.js.map",
+    "main.css": "/settyl_assignment/static/css/main.566c50a4.chunk.css",
+    "main.js": "/settyl_assignment/static/js/main.d47eafda.chunk.js",
+    "main.js.map": "/settyl_assignment/static/js/main.d47eafda.chunk.js.map",
     "runtime-main.js": "/settyl_assignment/static/js/runtime-main.b096220b.js",
     "runtime-main.js.map": "/settyl_assignment/static/js/runtime-main.b096220b.js.map",
     "static/css/2.fe359a49.chunk.css": "/settyl_assignment/static/css/2.fe359a49.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.de8f135c.chunk.js.map": "/settyl_assignment/static/js/2.de8f135c.chunk.js.map",
     "index.html": "/settyl_assignment/index.html",
     "static/css/2.fe359a49.chunk.css.map": "/settyl_assignment/static/css/2.fe359a49.chunk.css.map",
-    "static/css/main.1fdf14f8.chunk.css.map": "/settyl_assignment/static/css/main.1fdf14f8.chunk.css.map",
+    "static/css/main.566c50a4.chunk.css.map": "/settyl_assignment/static/css/main.566c50a4.chunk.css.map",
     "static/js/2.de8f135c.chunk.js.LICENSE.txt": "/settyl_assignment/static/js/2.de8f135c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b096220b.js",
     "static/css/2.fe359a49.chunk.css",
     "static/js/2.de8f135c.chunk.js",
-    "static/css/main.1fdf14f8.chunk.css",
-    "static/js/main.944b254f.chunk.js"
+    "static/css/main.566c50a4.chunk.css",
+    "static/js/main.d47eafda.chunk.js"
   ]
 }
