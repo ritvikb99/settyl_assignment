@@ -1,6 +1,7 @@
 div.main {
-  width: 50%;
   background: white;
+  width: fit-content;
+  box-shadow: 0px 0px 8px 2px rgba(255, 255, 255);
 }
 div.container {
   display: flex;
@@ -8,16 +9,29 @@ div.container {
 }
 input.addUser {
   background: #4b5d67;
-  max-width: 80%;
+  max-width: 90%;
+  width: 80%;
   color: white;
+  transition: all 0.2s ease-in-out;
 }
 .inputWrapper label {
   float: left;
   margin-left: 2em;
+  font-weight: bold;
+  margin-top: 1rem;
 }
-div.main {
-  width: fit-content;
-  box-shadow: 0px 0px 8px 2px rgba(255, 255, 255);
+input.addUser:hover {
+  background: white;
+  color: #0e1111;
+  border: 1px solid #4b5d67;
+  transform: scale(1.03);
+}
+
+input.addUser:focus {
+  background: white;
+  color: #0e1111;
+  border: 1px solid #4b5d67;
+  transform: scale(1.03);
 }
 
 button {

@@ -118,7 +118,7 @@ const AddUserComponent = (props) => {
         </div>
         <br></br>
         <br></br>
-        <button className='white b pv2 ph3 hover-bg-near-black bn br3 hover-shadow-inner' onClick={onSubmitButton}>
+        <button className='white grow b pv2 ph3 hover-bg-near-black bn br3 hover-shadow-inner' onClick={onSubmitButton}>
           Click to Add
         </button>
         <br />
